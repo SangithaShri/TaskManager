@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="content">
+        <div class="inputs">
+            <table id="taskForm">
+                <tr>
+                    <td><h1>Task Manager</h1></td>
+                </tr>
+                <tr>
+                    <td>Enter Task:</td>
+                    <td>
+                        <select name="task" id="task">
+                            <option value="OfficeWork">OfficeWork</option>
+                            <option value="PersonalWork">PersonalWork</option>
+                            <option value="Breaks">Breaks</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter Description:</td>
+                    <td><input required type="text" id="desc"></td>
+                </tr>
+                <tr>
+                    <td>Enter Duration:</td>
+                    <td><input type="text" id="durat" disabled></td>
+                </tr>
+                <tr>
+                    <td><button id="addtask" type="submit" onclick="AddTask()">Add Task</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="stopcont">
+        <div class="stopwatch">
+            <h1 id="display">00:00:00</h1>
+            <div class="controls">
+                <button id="stopwatch" onclick="startstop()">Start</button>
+                <button id="resetBtn" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <p class="filteropt">Filter
+        <select name="Filter" id="filter" onchange="Filtering()">
+            <option value="select">Select</option>
+            <option value="OfficeWork">OfficeWork</option>
+            <option value="PersonalWork">PersonalWork</option>
+            <option value="Breaks">Breaks</option>
+        </select>
+    </p>
+
+    <table border="1" id="AddTable">
+        <thead class="heading">
+            <th>Tasks</th>
+            <th>Description</th>
+            <th>Duration</th>
+            <th>Actions</th>
+        </thead>
+        <tbody id="office"></tbody>
+    </table>
+</body>
+<script src="index.js"></script>
+</html>

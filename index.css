@@ -1,0 +1,101 @@
+table {
+    border-collapse: collapse;
+    border: 1px;
+    width: 90%; /* Adjust as needed */
+}
+
+.heading{
+    background-color: rgb(9, 73, 101);
+    color: white;
+}
+#addtask{
+    width: 200px;
+    padding: 10px 13px;
+    margin-top: 15px;
+    background-color: rgb(79, 144, 172);
+    border-radius: 6px;
+    border: none;
+    font-size: medium;
+    color: white;
+}
+td,th{
+    padding: 8px;
+}
+#AddTable{
+    width: 100%;
+}
+#AddTable th{
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inputs input{
+    height: 30px;
+    width: 350px;
+}
+.inputs{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.filteropt{
+    padding-left: 10px;
+    font-size: 23px;
+}
+#filter{
+    height: 30px;
+    width: 400px;
+}
+.inputs select{
+    height: 40px;
+    width: 358px;
+}
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.button-container button {
+    width: 30%;
+    background-color:rgb(79, 144, 172);
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+}
+
+.content {
+    display: inline-block;
+    vertical-align: top;
+    width: 750px;
+}
+
+.stopcont {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    margin-top: 70px;
+    /* background-color:  rgb(10, 54, 74); */
+    height: 200px;
+    width: 250px;
+}
+
+.controls button {
+    margin: 10px 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color:rgb(79, 144, 172); 
+    border: none;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    transition-duration: 0.4s;
+}
+
+#display {
+    font-size: 3em;
+    padding-left: 30px;
+}
